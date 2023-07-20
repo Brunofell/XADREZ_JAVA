@@ -30,7 +30,17 @@ public class ChessMatch {
       board.placePiece(piece, new ChessPosition(column, row).toPosition());
    }
    private void inicialSetup(){
-      PlaceNewPiece('b', 4, new Rook(board, Color.WHITE));
-      PlaceNewPiece('a', 8, new King(board, Color.BLACK));
+      PlaceNewPiece('c', 1, new Rook(board, Color.WHITE));
+      PlaceNewPiece('c', 2, new Rook(board, Color.WHITE));
+      PlaceNewPiece('d', 2, new Rook(board, Color.WHITE));
+      PlaceNewPiece('e', 2, new Rook(board, Color.WHITE));
+      PlaceNewPiece('e', 1, new Rook(board, Color.WHITE));
+      PlaceNewPiece('d', 1, new King(board, Color.WHITE));
+      PlaceNewPiece('c', 7, new Rook(board, Color.BLACK));
+      PlaceNewPiece('c', 8, new Rook(board, Color.BLACK));
+      PlaceNewPiece('d', 7, new Rook(board, Color.BLACK));
+      PlaceNewPiece('e', 7, new Rook(board, Color.BLACK));
+      PlaceNewPiece('e', 8, new Rook(board, Color.BLACK));
+      PlaceNewPiece('d', 8, new King(board, Color.BLACK));
    }
 }
